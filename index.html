@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+    <meta charset="UTF-8">
+    <title>Table</title>
+    <link rel="stylesheet" href="app.css">
+</head>
+<body>
+
+
+<div class="text">
+    <button class="button" data-open-modal="generate">Генерация таблицы</button>
+    <button class="button" type="button" id="button-add">+</button>
+    <button class="button" type="button" id="button-remove">-</button>
+</div>
+
+<div class="modal" id="generate" data-modal>
+    <button class="button-close" data-close>&times;</button>
+    <form action="">
+        <header class="header">Введите параметры</header>
+        <input type="text" name="width" id="tableTR">
+        <input type="text" name="height" id="tableTD">
+        <div class="build">
+            <button class="button expand" type="button" id="button-event" data-close>Построить</button>
+        </div>
+    </form>
+</div>
+
+
+
+<div id="table-wrapper"></div>
+<script src="js/app.js"></script>
+</body>
+</html>
